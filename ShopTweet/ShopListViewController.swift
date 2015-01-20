@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ShopListView: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ShopListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
     
