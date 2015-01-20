@@ -27,10 +27,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ouc-1M-dPh">
-                                                    <rect key="frame" x="-243" y="1" width="393" height="43"/>
+                                                    <rect key="frame" x="8" y="0.0" width="53" height="43"/>
                                                 </imageView>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cBd-c8-PQZ">
-                                                    <rect key="frame" x="201" y="13" width="300" height="22"/>
+                                                    <rect key="frame" x="69" y="0.0" width="300" height="43"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -51,7 +51,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-738" y="-140"/>
+            <point key="canvasLocation" x="-738" y="-142"/>
         </scene>
         <!--ShopView-->
         <scene sceneID="j8g-ha-37q">

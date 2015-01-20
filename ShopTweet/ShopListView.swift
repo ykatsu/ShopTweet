@@ -30,11 +30,19 @@ class ShopListView: UIViewController, UITableViewDelegate, UITableViewDataSource
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        // tableCell の ID で UITableViewCell のインスタンスを生成
         var cell = tableView.dequeueReusableCellWithIdentifier("tableCell", forIndexPath: indexPath) as UITableViewCell
         
-        var textView = tableView.viewWithTag(2) as UITextView
-        textView.text = "ぷに\(indexPath.row+1)"
+        var img = UIImage(named:"\(imgArray[indexPath.row])")
+        // Tag番号 1 で UIImageView インスタンスの生成
+        var imageView = tableView.viewWithTag(1) as UIImageView
+        imageView.image = img
         
+        // Tag番号 ２ で UILabel インスタンスの生成
+        var textView = tableView.viewWithTag(2) as UITextView
+        textView.text = "\(label2Array[indexPath.row])"
+
         return cell
     }
     
