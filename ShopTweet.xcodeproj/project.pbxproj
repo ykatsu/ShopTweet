@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9217DAFC1A6E17D800617752 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9217DAFB1A6E17D800617752 /* ShopViewController.swift */; };
+		9217DAFC1A6E17D800617752 /* ShopTimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9217DAFB1A6E17D800617752 /* ShopTimelineViewController.swift */; };
 		927615081A6E4A5A00D49A81 /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 927615061A6E4A5A00D49A81 /* image2.jpg */; };
 		927615091A6E4A5A00D49A81 /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 927615071A6E4A5A00D49A81 /* image3.jpg */; };
+		92BD23F21A6FAE8700DA952D /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92BD23F11A6FAE8700DA952D /* Accounts.framework */; };
+		92BD23F41A6FAE8E00DA952D /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92BD23F31A6FAE8E00DA952D /* Social.framework */; };
 		92F6344D1A5FAD9500F8D912 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6344C1A5FAD9500F8D912 /* AppDelegate.swift */; };
 		92F6344F1A5FAD9500F8D912 /* ShopListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6344E1A5FAD9500F8D912 /* ShopListViewController.swift */; };
 		92F634521A5FAD9500F8D912 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F634501A5FAD9500F8D912 /* Main.storyboard */; };
@@ -29,9 +31,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9217DAFB1A6E17D800617752 /* ShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		9217DAFB1A6E17D800617752 /* ShopTimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopTimelineViewController.swift; sourceTree = "<group>"; };
 		927615061A6E4A5A00D49A81 /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
 		927615071A6E4A5A00D49A81 /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.jpg; sourceTree = "<group>"; };
+		92BD23F11A6FAE8700DA952D /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		92BD23F31A6FAE8E00DA952D /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		92F634471A5FAD9500F8D912 /* ShopTweet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopTweet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92F6344B1A5FAD9500F8D912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92F6344C1A5FAD9500F8D912 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92BD23F41A6FAE8E00DA952D /* Social.framework in Frameworks */,
+				92BD23F21A6FAE8700DA952D /* Accounts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +71,8 @@
 		92F6343E1A5FAD9500F8D912 = {
 			isa = PBXGroup;
 			children = (
+				92BD23F31A6FAE8E00DA952D /* Social.framework */,
+				92BD23F11A6FAE8700DA952D /* Accounts.framework */,
 				92F634491A5FAD9500F8D912 /* ShopTweet */,
 				92F6345F1A5FAD9500F8D912 /* ShopTweetTests */,
 				92F634481A5FAD9500F8D912 /* Products */,
@@ -85,7 +93,7 @@
 			children = (
 				92F6344C1A5FAD9500F8D912 /* AppDelegate.swift */,
 				92F6344E1A5FAD9500F8D912 /* ShopListViewController.swift */,
-				9217DAFB1A6E17D800617752 /* ShopViewController.swift */,
+				9217DAFB1A6E17D800617752 /* ShopTimelineViewController.swift */,
 				92F634501A5FAD9500F8D912 /* Main.storyboard */,
 				92F634531A5FAD9500F8D912 /* Images.xcassets */,
 				92F634551A5FAD9500F8D912 /* LaunchScreen.xib */,
@@ -225,7 +233,7 @@
 			files = (
 				92F6344F1A5FAD9500F8D912 /* ShopListViewController.swift in Sources */,
 				92F6344D1A5FAD9500F8D912 /* AppDelegate.swift in Sources */,
-				9217DAFC1A6E17D800617752 /* ShopViewController.swift in Sources */,
+				9217DAFC1A6E17D800617752 /* ShopTimelineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

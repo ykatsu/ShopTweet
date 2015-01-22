@@ -46,7 +46,7 @@
                     <navigationItem key="navigationItem" id="Q9E-sz-Qb5"/>
                     <connections>
                         <outlet property="tableView" destination="GIz-HT-06O" id="Mlg-bA-jY2"/>
-                        <segue destination="sgk-dH-RBx" kind="push" identifier="pushToShop" id="ay0-ac-ebZ"/>
+                        <segue destination="sgk-dH-RBx" kind="show" identifier="pushToShop" id="ay0-ac-ebZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -56,7 +56,7 @@
         <!--ShopView-->
         <scene sceneID="j8g-ha-37q">
             <objects>
-                <viewController title="ShopView" id="sgk-dH-RBx" customClass="ShopViewController" customModule="ShopTweet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="ShopView" id="sgk-dH-RBx" customClass="ShopTimelineViewController" customModule="ShopTweet" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KdA-kJ-SFT"/>
                         <viewControllerLayoutGuide type="bottom" id="iEN-fq-FjY"/>

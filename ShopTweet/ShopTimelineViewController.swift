@@ -8,14 +8,14 @@
 
 import UIKit
 
-class ShopViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ShopTimelineViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var shopImage: UIImageView!
     @IBOutlet weak var shopLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
     var shopImageName: String!
-    var shopLabelText: String!
+    var shopNameText: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +27,7 @@ class ShopViewController: UIViewController, UITableViewDataSource, UITableViewDe
         shopImage.image = UIImage(named:shopImageName)
         // 画像のアスペクト比を維持しUIImageViewサイズに収まるように表示
 //        shopImage?.contentMode = UIViewContentMode.ScaleAspectFit
-        shopLabel.text = shopLabelText
+        shopLabel.text = shopNameText
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

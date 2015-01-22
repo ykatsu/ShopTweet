@@ -7,13 +7,15 @@
 //
 
 import UIKit
+import Accounts
+import Social
 
 class ShopListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
     
-    let imgArray: NSArray = ["image2.JPG","image3.JPG","image2.JPG","image3.JPG"]
-    let label2Array: NSArray = ["image0","image1","image2","image3"]
+    let shopImages: NSArray = ["image2.JPG","image3.JPG","image2.JPG","image3.JPG"]
+    let shopNames: NSArray = ["image0","image1","image2","image3"]
     
     var selectedRow: Int!
     
@@ -26,7 +28,7 @@ class ShopListViewController: UIViewController, UITableViewDelegate, UITableView
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return imgArray.count
+        return shopNames.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -34,14 +36,14 @@ class ShopListViewController: UIViewController, UITableViewDelegate, UITableView
         // tableCell の ID で UITableViewCell のインスタンスを生成
         var cell = tableView.dequeueReusableCellWithIdentifier("tableCell", forIndexPath: indexPath) as UITableViewCell
         
-        var img = UIImage(named:"\(imgArray[indexPath.row])")
+        var img = UIImage(named:"\(shopImages[indexPath.row])")
         // Tag番号 1 で UIImageView インスタンスの生成
         var imageView = tableView.viewWithTag(1) as UIImageView
         imageView.image = img
         
         // Tag番号 ２ で UILabel インスタンスの生成
         var textView = tableView.viewWithTag(2) as UITextView
-        textView.text = "\(label2Array[indexPath.row])"
+        textView.text = "\(shopNames[indexPath.row])"
 
         return cell
     }
@@ -57,10 +59,10 @@ class ShopListViewController: UIViewController, UITableViewDelegate, UITableView
     // Segue 準備
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if (segue.identifier == "pushToShop") {
-            let subVC: ShopViewController = segue.destinationViewController as ShopViewController
+            let subVC: ShopTimelineViewController = segue.destinationViewController as ShopTimelineViewController
             // [indexPath.row] から画像名を設定
-            subVC.shopImageName = "\(imgArray[selectedRow])"
-            subVC.shopLabelText = "\(label2Array[selectedRow])"
+            subVC.shopImageName = "\(shopImages[selectedRow])"
+            subVC.shopNameText = "\(shopNames[selectedRow])"
         }
     }
 
